@@ -1,56 +1,372 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/zyx-worksx/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZYX-WorksX — AI-инструменты для реальных задач</title>
+  <meta name="description"
+    content="Платформа года: технологии, которые работают на вас. Узнайте, как применять ИИ в повседневной жизни.">
+
+<link rel="icon"
+  href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMCIgZmlsbD0iIzYzNjZGMSIvPjxwYXRoIGQ9Ik0xNjAgMTYwIEwzNTIgMTYwIEwxNjAgMzUyIEwzNTIgMzUyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjQwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGZpbGw9Im5vbmUiLz48L3N2Zz4="
+  type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module" crossorigin src="/zyx-worksx/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/zyx-worksx/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/zyx-worksx/assets/styles-B6LnTX-l.css">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="./#hero" class="header__logo">
+      ZYX<span class="header__logo-accent">WorksX</span>
+    </a>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="./#about" class="nav__link">О платформе</a></li>
+        <li class="nav__item"><a href="./#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="./#blog" class="nav__link">Практики</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--small header__btn">Связаться</a>
+      <button class="header__burger" aria-label="Открыть меню">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__content">
+      <button class="mobile-menu__close" aria-label="Закрыть меню">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu__list">
+        <li><a href="./#hero" class="mobile-menu__link">Главная</a></li>
+        <li><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+        <li><a href="./#innovations" class="mobile-menu__link">Инновации</a></li>
+        <li><a href="./#blog" class="mobile-menu__link">Практики</a></li>
+        <li><a href="./#contact" class="mobile-menu__link mobile-menu__link--accent">Связаться</a></li>
+      </ul>
+    </div>
   </div>
 </header>
 
-
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section id="hero" class="hero">
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge">Платформа года 2025</div>
+            <h1 class="hero__title reveal-text">AI-инструменты <br>для <span class="text-gradient">реальных задач</span>
+            </h1>
+            <p class="hero__desc reveal-text">
+                Передовая цифровая инфраструктура. Воплотите мечты в реальность и постройте карьеру, которая работает на
+                вас.
+            </p>
+            <div class="hero__actions reveal-item">
+                <a href="#contact" class="btn">Начать сейчас</a>
+                <a href="#about" class="btn btn--outline">Узнать детали</a>
+            </div>
+            <div class="hero__stats reveal-item">
+                <div class="stat-item">
+                    <span class="stat-num">2 мин</span>
+                    <span class="stat-label">На подключение</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">EU</span>
+                    <span class="stat-label">Доступно в Европе</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero__visual">
+            <div class="hero__image-wrapper" data-tilt>
+                <img src="/zyx-worksx/assets/one-DrYNyPYB.jpg" alt="AI Interface" class="hero__img">
+                <div class="hero__floating-card card-1">
+                    <i data-lucide="zap"></i>
+                    <span>Быстрый старт</span>
+                </div>
+                <div class="hero__floating-card card-2">
+                    <i data-lucide="trending-up"></i>
+                    <span>Рост</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section about">
+    <div class="container about__container">
+        <div class="about__image" data-aos="fade-right">
+            <img src="/zyx-worksx/assets/two-B8xl_b2u.jpg" alt="About Platform">
+        </div>
+        <div class="about__text" data-aos="fade-left">
+            <h2 class="section-title">Переосмыслите подход <br>к развитию</h2>
+            <p class="text-body">
+                Это не просто технология, это инновационная технология. Мы создали экосистему, где AI-инструменты для
+                обычных людей становятся реальностью.
+            </p>
+            <p class="text-body">
+                Легко разобраться без опыта. Наши методологии, доказавшие эффективность, позволяют оценить перспективы
+                проекта уже в первую неделю использования.
+            </p>
+            <ul class="check-list">
+                <li><i data-lucide="check-circle"></i> Проверенный партнер в ЕС</li>
+                <li><i data-lucide="check-circle"></i> Стратегия роста на базе инноваций</li>
+                <li><i data-lucide="check-circle"></i> Удобная адаптация без сложностей</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="section benefits">
+    <div class="container">
+        <div class="section-header text-center" data-aos="fade-up">
+            <h2 class="section-title">Почему ZYX-WorksX?</h2>
+            <p class="section-subtitle">Откройте новые возможности с нами</p>
+        </div>
+
+        <div class="benefits__grid">
+            <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="benefit-card__icon"><i data-lucide="shield-check"></i></div>
+                <h3>Экспертная поддержка</h3>
+                <p>Поддержка по всем вопросам 24/7. Мы сопровождаем вас на каждом этапе пути.</p>
+            </div>
+            <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="benefit-card__icon"><i data-lucide="cpu"></i></div>
+                <h3>Технология нового поколения</h3>
+                <p>Решения, которые меняют правила игры. Платформа построена на базе новейших нейросетей.</p>
+            </div>
+            <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="benefit-card__icon"><i data-lucide="coins"></i></div>
+                <h3>Программа дохода</h3>
+                <p>Практики, применимые уже сегодня. Создайте источник роста, который работает автономно.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="innovations" class="section innovations">
+    <div class="container">
+        <h2 class="section-title mb-5" data-aos="fade-right">Инновации</h2>
+
+        <div class="swiper innovations-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide innovation-slide">
+                    <img src="/zyx-worksx/assets/three-BB7KPeJd.jpg" alt="Innovation 1" class="innovation-slide__img">
+                    <div class="innovation-slide__content">
+                        <h3>Smart Analytics Core</h3>
+                        <p>Автоматический анализ данных в реальном времени.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide innovation-slide">
+                    <img src="/zyx-worksx/assets/four-BS8mCBFU.jpg" alt="Innovation 2" class="innovation-slide__img">
+                    <div class="innovation-slide__content">
+                        <h3>Neural Bridge</h3>
+                        <p>Бесшовная интеграция AI в ваши привычные процессы.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide innovation-slide">
+                    <img src="/zyx-worksx/assets/five-BHfJVJv7.jpg" alt="Innovation 3" class="innovation-slide__img">
+                    <div class="innovation-slide__content">
+                        <h3>Auto-Scale Tech</h3>
+                        <p>Система растет вместе с вашими потребностями.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="section practices">
+    <div class="container">
+        <h2 class="section-title text-center" data-aos="fade-up">Практики применения</h2>
+        <div class="practices__grid">
+            <article class="practice-card" data-aos="zoom-in">
+                <div class="practice-card__img">
+                    <img src="/zyx-worksx/assets/six-V_akGB1K.jpg" alt="Practice 1">
+                    <span class="tag">Гайд</span>
+                </div>
+                <div class="practice-card__body">
+                    <h4>Пошаговый путь, понятный каждому</h4>
+                    <p>Как начать использовать платформу за 2 минуты.</p>
+                    <a href="#contact" class="link-arrow">Читать <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+            <article class="practice-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="practice-card__img">
+                    <img src="/zyx-worksx/assets/seven-j6AmzECj.jpg" alt="Practice 2">
+                    <span class="tag">Стратегия</span>
+                </div>
+                <div class="practice-card__body">
+                    <h4>Расширьте горизонты проекта</h4>
+                    <p>5 способов интеграции AI в малый бизнес в Италии.</p>
+                    <a href="#contact" class="link-arrow">Читать <i data-lucide="arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="container contact__container">
+        <div class="contact__info" data-aos="fade-right">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <p class="text-body mb-4">Запросить доступ или получить бесплатную консультацию по всем вопросам.</p>
+
+            <div class="contact__details">
+                <div class="contact__item">
+                    <i data-lucide="map-pin"></i>
+                    <div>
+                        <strong>Адрес:</strong>
+                        <p>Via Dante Alighieri, 24, 20121 Milano MI</p>
+                    </div>
+                </div>
+                <div class="contact__item">
+                    <i data-lucide="mail"></i>
+                    <div>
+                        <strong>Email:</strong>
+                        <p>support@node-onix.today</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__form-wrapper" data-aos="fade-left">
+            <form id="contactForm" class="form" novalidate>
+                <div class="form__group">
+                    <label for="name" class="form__label">Ваше имя</label>
+                    <input type="text" id="name" class="form__input" placeholder="Иван Иванов" required>
+                    <span class="error-msg">Введите имя</span>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" id="email" class="form__input" placeholder="example@mail.com" required>
+                    <span class="error-msg">Введите корректный email</span>
+                </div>
+
+                <div class="form__group">
+                    <label for="phone" class="form__label">Телефон</label>
+                    <input type="tel" id="phone" class="form__input" placeholder="Только цифры" required>
+                    <span class="error-msg">Только цифры допустимы</span>
+                </div>
+
+                <div class="form__group captcha-group">
+                    <label class="form__label">Решите пример: <span id="captchaQuestion"></span></label>
+                    <input type="number" id="captchaAnswer" class="form__input" required>
+                    <span class="error-msg">Неверный ответ</span>
+                </div>
+
+                <div class="form__group checkbox-group">
+                    <input type="checkbox" id="consent" required>
+                    <label for="consent">Я согласен с <a href="./personal-data-policy.html">политикой обработки
+                            данных</a></label>
+                </div>
+
+                <button type="submit" class="btn btn--full">Отправить заявку</button>
+
+                <div class="form__success" id="formSuccess">
+                    <i data-lucide="check-circle"></i>
+                    <p>Спасибо! Мы свяжемся с вами в ближайшее время.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="./#hero" class="footer__logo">
+          ZYX<span class="footer__logo-accent">WorksX</span>
+        </a>
+        <p class="footer__desc">
+          Передовая цифровая инфраструктура для тех, кто хочет построить карьеру, которая работает на вас.
+        </p>
+        <p class="footer__trust">Проверенный партнер в ЕС</p>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__list">
+          <li><a href="./#hero" class="footer__link">Главная</a></li>
+          <li><a href="./#about" class="footer__link">Возможности</a></li>
+          <li><a href="./#innovations" class="footer__link">Технологии</a></li>
+          <li><a href="./#contact" class="footer__link">Контакты</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Информация</h3>
+        <ul class="footer__list">
+          <li><a href="./privacy.html" class="footer__link">Privacy Policy</a></li>
+          <li><a href="./cookies.html" class="footer__link">Cookies Policy</a></li>
+          <li><a href="./terms.html" class="footer__link">Terms of Use</a></li>
+          <li><a href="./return.html" class="footer__link">Return Policy</a></li>
+          <li><a href="./disclaimer.html" class="footer__link">Disclaimer</a></li>
+          <li><a href="./personal-data-policy.html" class="footer__link">Personal Data</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contacts">
+          <li class="footer__contact-item">
+            <i data-lucide="map-pin" class="footer__icon"></i>
+            <span>Via Dante Alighieri, 24, 20121 Milano MI, Italy</span>
+          </li>
+          <li class="footer__contact-item">
+            <i data-lucide="phone" class="footer__icon"></i>
+            <a href="tel:+390212345678">+39 02 1234 5678</a>
+          </li>
+          <li class="footer__contact-item">
+            <i data-lucide="mail" class="footer__icon"></i>
+            <a href="mailto:hello@zyx-worksx.fit">hello@zyx-worksx.fit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 ZYX-WorksX. Все права защищены. Платформа уже доступна в Европе.</p>
+    </div>
   </div>
 </footer>
+    <div id="cookiePopup" class="cookie-popup">
+      <div class="cookie-popup__content">
+        <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie
+            политике</a>.</p>
+        <button id="acceptCookie" class="btn btn--small">Принять</button>
+      </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
