@@ -806,3 +806,126 @@ h6 {
         transform: translateX(5px);
     }
 }
+/* --- LEGAL PAGES STYLES --- */
+
+/* Отступ сверху, чтобы хедер не перекрывал текст */
+.pages {
+    padding-top: calc(var(--header-height) + 60px);
+    padding-bottom: 80px;
+    background-color: #fff;
+}
+
+/* Ограничиваем ширину текста для удобного чтения */
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Заголовки */
+.legal-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: var(--color-text);
+    line-height: 1.1;
+}
+
+.legal-content h2 {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: var(--color-text);
+    border-left: 4px solid var(--color-primary);
+    /* Фиолетовая полоска слева */
+    padding-left: 15px;
+}
+
+/* Основной текст */
+.legal-content p {
+    font-size: 1rem;
+    color: #4B5563;
+    /* Чуть мягче черного */
+    margin-bottom: 1.5em;
+    line-height: 1.8;
+}
+
+/* Лид-абзац (первый) */
+.legal-content .lead {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* Списки */
+.legal-list,
+.legal-list-bullet {
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.legal-list li {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #4B5563;
+    line-height: 1.7;
+}
+
+.legal-list li strong {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+/* Маркеры списков */
+.legal-list-bullet {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+/* Ссылка (Email) */
+.legal-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin-top: 5px;
+    border-bottom: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.legal-link:hover {
+    border-bottom-color: var(--color-primary);
+}
+
+/* Блок "Обратите внимание" */
+.note-box {
+    background: #F3F4F6;
+    border-radius: 12px;
+    padding: 20px 25px;
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    margin: 30px 0;
+    border: 1px solid #E5E7EB;
+}
+
+.note-box i {
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.note-box span {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+    .legal-content h1 {
+        font-size: 2rem;
+    }
+
+    .legal-content h2 {
+        font-size: 1.3rem;
+        margin-top: 40px;
+    }
+}
