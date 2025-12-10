@@ -1,19 +1,38 @@
 <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+  <div class="container header__container">
+    <a href="./#hero" class="header__logo">
+      ZYX<span class="header__logo-accent">WorksX</span>
+    </a>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="./#hero" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="./#about" class="nav__link">О платформе</a></li>
+        <li class="nav__item"><a href="./#innovations" class="nav__link">Инновации</a></li>
+        <li class="nav__item"><a href="./#blog" class="nav__link">Практики</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--small header__btn">Связаться</a>
+      <button class="header__burger" aria-label="Открыть меню">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__content">
+      <button class="mobile-menu__close" aria-label="Закрыть меню">
+        <i data-lucide="x"></i>
+      </button>
+      <ul class="mobile-menu__list">
+        <li><a href="./#hero" class="mobile-menu__link">Главная</a></li>
+        <li><a href="./#about" class="mobile-menu__link">О платформе</a></li>
+        <li><a href="./#innovations" class="mobile-menu__link">Инновации</a></li>
+        <li><a href="./#blog" class="mobile-menu__link">Практики</a></li>
+        <li><a href="./#contact" class="mobile-menu__link mobile-menu__link--accent">Связаться</a></li>
+      </ul>
+    </div>
   </div>
 </header>
